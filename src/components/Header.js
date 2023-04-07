@@ -49,23 +49,23 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to='/books'
-                aria-label='Books'
-                title='Books'
+                to='/products'
+                aria-label='Products'
+                title='Products'
                 className={({ isActive }) =>
                   isActive
                     ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                     : 'font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                 }
               >
-                Books
+                Products
               </NavLink>
             </li>
             <li>
               <NavLink
                 to='/booking'
                 aria-label='Booking'
-                title='About us'
+                title='Booking'
                 className={({ isActive }) =>
                   isActive
                     ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
@@ -92,8 +92,8 @@ const Header = () => {
             <li>
               <NavLink
                 to='/contact'
-                aria-label='About us'
-                title='About us'
+                aria-label='Contact us'
+                title='Contact us'
                 className={({ isActive }) =>
                   isActive
                     ? 'font-medium tracking-wide text-blue-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
@@ -187,12 +187,22 @@ const Header = () => {
                       </li>
                       <li>
                         <Link
-                          to='/books'
-                          aria-label='Books'
-                          title='Books'
+                          to='/products'
+                          aria-label='Products'
+                          title='Products'
                           className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                         >
-                          Books
+                         Products
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to='/booking'
+                          aria-label='Booking'
+                          title='Booking'
+                          className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                        >
+                          Booking
                         </Link>
                       </li>
                       <li>
@@ -203,6 +213,16 @@ const Header = () => {
                           className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                         >
                           About Us
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          to='/contact'
+                          aria-label='Contact Us'
+                          title='Contact Us'
+                          className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                        >
+                          Contact Us
                         </Link>
                       </li>
                     </ul>

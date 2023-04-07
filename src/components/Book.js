@@ -10,7 +10,7 @@ const Book = ({ book }) => {
 
     <>
     <Link to={`../book/${isbn13}`} aria-label='View Item'>
-      <div className='relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl'>
+      <div className='relative overflow-hidden transition duration-600 delay-300 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl'>
         <img
           className='object-cover w-full h-56 md:h-64 xl:h-80'
           src={image}

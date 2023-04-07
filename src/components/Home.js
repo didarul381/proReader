@@ -14,8 +14,10 @@ const Home = () => {
   const booksData = loaderData.books;
   // console.log(booksData.length);
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-24">
-      <div className="flex flex-col items-center justify-between lg:flex-row">
+    <div className="px-4 sm:mb-20 lg:mb-5 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-24">
+     <section className="mb-11">
+
+     <div className="flex flex-col items-center justify-between lg:flex-row">
         <div className="mb-10 lg:max-w-lg  lg:pr-5 lg:mb-0">
           <div className="max-w-xl mb-6 lg:mt-8">
             <div>
@@ -97,10 +99,15 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="px-4 py-8 lg:mt-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-8">
-        <div className="grid gap-6 row-gap-5 mb-4 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
-          <div class="max-w-sm bg-white ">
-            <img class="rounded-t-lg ml-2" src={Home1} alt="" />
+     </section>
+
+    <section className="sm:py-6 mt-36 lg:mt-0 md:mt-4 mx-auto text-center">
+    <div className="px-4  py-8 mx-auto text-center sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">
+        <div className="  mx-auto text-center  lg:mt-2  grid gap-6 py-6 row-gap-5 mb-4 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
+          <div class= "flex flex-col items-center justify-center  lg:mt-2  max-w-sm bg-white">
+         
+          <img className="ml-6 rounded-t-lg " src={Home1} alt="" />
+          
 
             <div class="p-5">
               <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
@@ -113,7 +120,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div class="max-w-sm bg-white ">
+          <div class="flex flex-col items-center justify-center max-w-sm bg-white ">
             <img class="rounded-t-lg ml-2" src={Home2} alt="" />
 
             <div class="p-5">
@@ -127,7 +134,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div class="max-w-sm bg-white ">
+          <div class="flex flex-col items-center justify-center max-w-sm bg-white ">
             <img class="rounded-t-lg ml-2" src={Home3} alt="" />
 
             <div class="p-5">
@@ -141,7 +148,7 @@ const Home = () => {
               </p>
             </div>
           </div>
-          <div class="max-w-sm bg-white ">
+          <div class="flex flex-col items-center justify-center max-w-sm bg-white ">
             <img class="rounded-t-lg ml-2" src={Home4} alt="" />
 
             <div class="p-5">
@@ -156,8 +163,12 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <h2 className="text-center text-2xl text-cyan-400 ">
-          NEW <b className="text-blue-900 font-serif">Books</b>
+        </div>
+     </section>
+
+       <section>
+       <h2 className="text-center text-2xl mb-16 py-4 text-cyan-400 ">
+          NEW <b className="text-blue-900 mb-8 font-serif">Books</b>
         </h2>
         {/* <hr className="w-10 mx-auto my-2 text-center py-6 "></hr> */}
         <div className="grid gap-6 row-gap-5 mb-4 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
@@ -165,8 +176,10 @@ const Home = () => {
             <NewBook key={book.isbn13} book={book} />
           ))}
         </div>
+       </section>
 
-        <h2 className="text-center text-2xl text-cyan-400 ">
+       <section className="my-2">
+       <h2 className="text-center my-16 py-2 text-2xl text-cyan-400 ">
           MOST <b className="text-blue-900 font-serif">BOUGHT BOOKS</b>
         </h2>
         {/* <hr className="w-10 mx-auto my-2 text-center py-6 "></hr> */}
@@ -175,8 +188,10 @@ const Home = () => {
             <MostBoughtBook key={book.isbn13} book={book} />
           ))}
         </div>
+       </section>
+        <section>
         <div className="grid gap-6 row-gap-5 pt-16 lg:grid-cols-4 sm:row-gap-6 sm:grid-cols-2">
-          <div className="p-6 divide-y divide-slate-200">
+          <div className=" mx-auto text-center p-6 divide-y divide-slate-200">
             <div class="flex  first:pt-0 last:pb-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +208,7 @@ const Home = () => {
                 />
               </svg>
 
-              <div class="ml-3 overflow-hidden">
+              <div className=" text-center ml-3 overflow-hidden">
                 <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   15,254
                 </h3>
@@ -204,7 +219,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="p-6 divide-y divide-slate-200">
+          <div className="  mx-auto p-6 divide-y divide-slate-200 text-center">
             <div class="flex py-4 first:pt-0 last:pb-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -221,7 +236,7 @@ const Home = () => {
                 />
               </svg>
 
-              <div class="ml-3 overflow-hidden">
+              <div className="  ml-3 text-center overflow-hidden">
                 <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   12,254
                 </h3>
@@ -231,7 +246,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 divide-y divide-slate-200">
+          <div className=" mx-auto p-6 divide-y divide-slate-200">
             <div class="flex py-4 first:pt-0 last:pb-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +263,7 @@ const Home = () => {
                 />
               </svg>
 
-              <div class="ml-3 overflow-hidden">
+              <div  className=" text-center ml-3 overflow-hidden">
                 <h3 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                   15,254
                 </h3>
@@ -258,7 +273,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className="p-6 divide-y divide-slate-200">
+          <div className=" mx-auto p-6 divide-y divide-slate-200">
             <div class="flex py-4 first:pt-0 last:pb-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -286,8 +301,10 @@ const Home = () => {
             </div>
           </div>
         </div>
+        </section>
       </div>
-    </div>
+    
+   
   );
 };
 

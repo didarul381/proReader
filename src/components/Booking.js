@@ -4,7 +4,7 @@ const Booking = () => {
   return (
     <div className={styles.bg}>
       <div className="max-w-screen-xl sm:mx-auto mb-11">
-        <div className="grid grid-cols-1 gap-16 row-gap-8 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 row-gap-8 lg:grid-cols-2">
           <form className="bg-slate-50  border border-slate-300 p-3">
           <h5 className="text-center mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               Booking Now
@@ -66,16 +66,16 @@ const Booking = () => {
               />
             </label>
            
-            <button className=" my-3 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-              Button
+            <button className=" my-3 max-w-full bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+             Submit
             </button>
             <i aria-hidden="true" className="bookory-icon- bookory-icon-book"></i>
           </form>
 
-          <div className="space-y-8">
-            <div  className="text-center mb-2 text-2xl font-bold tracking-tight text-white my-10">
+          <div className="space-y-6">
+            <div  className="text-center mb-2 text-xl font-bold tracking-tight text-white my-10">
             <h4>A room without books is like<br/> a body without a soul.</h4>
-            <p>Reading book is a habit with enormous blessings along with knowledge gain. One’s lifestyle, or perspective to life is revealed through his point of view towards a book. Your choice of book defines clearly about your choices in some other situations</p>
+           <p >Reading book is a habit with enormous blessings along with knowledge gain. </p>
             </div>
           </div>
         </div>

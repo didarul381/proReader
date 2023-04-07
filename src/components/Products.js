@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Book from "./Book";
+// import Book from "./Book";
 
-const Books = () => {
+const Products = () => {
   
   const loaderData = useLoaderData();
   const booksData = loaderData.books;
@@ -46,6 +47,7 @@ const Books = () => {
   return (
     <>
      <div className="text-center">
+     <h2 className="text-5xl text-green-500 my-2 text-center">Find your Favourite Book...</h2>
      <label
         for="books"
         class="w-11 mb-2 text-sm font-medium text-gray-900 dark:text-white"
@@ -78,4 +80,4 @@ const Books = () => {
   );
 };
 
-export default Books;
+export default Products;
